@@ -2,16 +2,6 @@ const dice = document.getElementById('dice');
 const btn = document.getElementById('btn');
 const resultado = document.getElementById('resultado');
 
-/*
-  Para trazer cada face para a frente, rotacionamos o CUBO
-  na direção OPOSTA à da face:
-  - Face 1 está em rotateY(0deg)   → cubo: X=0,   Y=0
-  - Face 2 está em rotateY(-90deg) → cubo: X=0,   Y=+90  (oposto)
-  - Face 3 está em rotateY(180deg) → cubo: X=0,   Y=180
-  - Face 4 está em rotateY(90deg)  → cubo: X=0,   Y=-90  (oposto)
-  - Face 5 está em rotateX(90deg)  → cubo: X=-90, Y=0    (oposto)
-  - Face 6 está em rotateX(-90deg) → cubo: X=+90, Y=0    (oposto)
-*/
 const faceRotations = [
   { face: 1, x: 0,   y: 0   },
   { face: 2, x: 0,   y: 90  },
