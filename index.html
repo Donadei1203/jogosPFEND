@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Role o Dado!</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <nav class="col">
+      <h1>Logo</h1>
+      <div class="row jogos">
+        <div>
+          <a href="index.html">Rolar Dado</a>
+          <a href="palavra/palavra.html">Advinhar Palavra</a>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="frameDado">
+        <div class="containerDado">
+          <div class="dado" id="dice">
+            <div class="face um">1</div>
+            <div class="face dois">2</div>
+            <div class="face tres">3</div>
+            <div class="face quatro">4</div>
+            <div class="face cinco">5</div>
+            <div class="face seis">6</div>
+          </div>
+        </div>
+        <button class="btn" id="btn">Girar Dado</button>
+        <div class="resultado" id="resultado"></div>
+      </div>
+    </main>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

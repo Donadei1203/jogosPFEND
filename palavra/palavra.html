@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advinhar Palavra</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../style.css">
+
+
+</head>
+<body>
+
+  <nav class="col">
+    <h1>Logo</h1>
+    <div class="row jogos">
+        <div>
+            <a href="../index.html">Rolar Dado</a>
+            <a href="advinhar.html">Advinhar Palavra</a>
+        </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <div id="telaP1">
+      <p>Jogador 1 - Digite a palavra secreta:</p>
+      <input type="password" id="inputPalavra" placeholder="Palavra secreta..." /><br/><br/>
+      <p>Digite uma dica:</p>
+      <input type="text" id="inputDica" placeholder="Dica..." /><br/><br/>
+      <button class="btn" onclick="enviar()">Enviar</button>
+    </div>
+
+    <div id="telaP2" style="display:none; text-align:center;">
+      <p id="dica"></p>
+      <p id="tracos"></p>
+      <p id="tentativas"></p>
+      <p id="letras">Letras tentadas: -</p>
+      <p id="mensagem"></p>
+      <button id="btnChutar" class="btn" onclick="chutar()">Chutar letra</button>
+      <button id="btnReiniciar" class="btn" style="display:none;" onclick="reiniciar()">Jogar novamente</button>
+    </div>
+
+  </main>
+  <script src="palavra.js"></script>
+</body>
+</html>
