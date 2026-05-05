@@ -84,6 +84,6 @@ function reiniciar() {
   document.getElementById("letras").textContent = "Letras tentadas: -";
   document.getElementById("btnChutar").style.display = "inline-block";
   document.getElementById("btnReiniciar").style.display = "none";
-  document.getElementById("telaJ1").style.display = "block";
-  document.getElementById("telaJ2").style.display = "none";
+  document.getElementById("telaP1").style.display = "block";
+  document.getElementById("telaP2").style.display = "none";
 }
